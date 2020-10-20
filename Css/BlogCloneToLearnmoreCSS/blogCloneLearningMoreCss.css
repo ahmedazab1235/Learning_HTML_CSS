@@ -1,0 +1,45 @@
+body{
+  background-color: #d9dbde;
+}
+
+h1{
+  border-width: thick;
+  border-color: black;
+  border-style: solid;
+}
+.pargraph{
+  background-color: #ffec17;
+}
+h2{
+  color: purple;
+}
+#listitem{
+  color: purple;
+  text-decoration: overline;
+}
+
+#firsttextarea{
+  border-width: medium;
+  border-style: solid;
+  border-color: black;
+}
+
+input{
+
+  border-width: medium;
+  border-color: orange;
+  border-style: groove;
+}
+
+.lastdiv{
+  background-color: blue;
+  border-width: medium;
+  border-style: dashed;
+  border-color: yellow;
+}
+a{
+  color: red;
+}
+a:visited{
+  color: blue;
+}

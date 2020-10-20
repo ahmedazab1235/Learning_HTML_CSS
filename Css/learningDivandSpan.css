@@ -1,0 +1,18 @@
+body{
+  background-color: #e4ebed;
+}
+
+p{
+  color: black;
+}
+
+div{
+  background-color: #ffffff;
+  border-color: black;
+  border-style: dotted;
+  border-width: medium;
+}
+span{
+  background: black;
+  color: red;
+}
