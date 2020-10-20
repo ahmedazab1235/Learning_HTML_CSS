@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+
+My HTML Notes :) Ahmed Azab 9/10/2020
+
+markup بتخلي ال text ليها شكل معين (Text has a spicial meaning)
+for examble
+<em>ahmed</em>
+
+em (the word inside the angle bracts ) is a tag
+
+<em>ahmed</em>
+والجمله كلها بتكون element
+
+<em> is an opening tag 
+
+</em> is a closing tag
+
+often come in pairs like this but not always
+=================================================================
+<br> is a line break start a new line (it's such say break the line\n
+ here it hasn't a content. therefore,there are no end(closing)tag).
+
+
+ these elements called void elements or empty elements
+ <br><br>
+ تخليه يعملك سطر فاضي زي بتاع ال    (<p></p>)
+
+ In contrast, br is an inline element that just creates a line break.
+  It doesn't have a box around it and doesn't create any margin.
+ =================================================================
+ <strong>
+     the Text inside is Bold
+ </strong>
+
+ With li and p, the browser can figure out where to close the element.
+  But with an element like strong,
+  there's no way for the browser to know where you want the emphasis to stop!
+ ================================================================
+ <p>
+     this element is used for pragraphes (p stands for (pragraph))
+ </p>
+
+لما دي بتتعمل بيبدا من سطر جديد ويسيب سطر
+
+p is a block element, which means the browser creates a box around it.
+ It also generates a margin around this box,
+ to visually separate the paragraph from surrounding elements
+
+ +++++++++
+ Without the closing</p> tag, 
+ the browser will still close the element automatically—but not until it sees the next p element starting.
+  So all of the text up until that point gets included in the contents of the first p element.
+
+===================================================================
+<mark>
+    ده بيخلي الكلام اللي في النص لونه اصفر
+</mark>
+====================================================================
+<sup>
+    بيخلي الكلام اللي جواه لفوق ويصغره سنه 
+    بيستخدم مع المعادلات الرياضيه والكميائية
+</sup>
+===================================================================
+<sub>
+    بيخلي الكلام اللي جواه لتحت ويصغره سنه 
+    بيستخدم مع المعادلات الرياضيه والكميائية
+</sub>
+===================================================================
+nesting
+
+<p>
+
+
+    <em>Ahmed</em>
+</p>
+we can't put paragraph on another paragraph
+==================================================================
+=================================================================
+=======================Review==================================
+
+<em></em> and <strong></strong> — Emphasis.
+    By default, text inside <em></em>  is displayed as italic, and text in <strong></strong>  is displayed as boldface.
+    <p></p> — Paragraph.
+    Text in a paragraph is separated visually from other paragraphs by a small margin.
+    <br> — Line break. (empty)
+    A line break does not create a new paragraph; it only marks the end of a line.
+    <sub></sub> and <sup></sup> — Subscript and superscript.
+    Useful for math and chemistry: I have x3+2x2 molecules of H2O.
+    <mark></mark> — Highlighting.
+    Not very often used, but it's kind of cool.
+
+Of these elements, the br element is the only one that is an empty (or void) element.
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+==========================================================================
+HTML has several elements for headlines or section headings, starting with <h1> </h1>
+for the largest headlines and going down to <h6></h6> for the smallest.
++like with the p element, heading elements create a little bit of space (margin) around themselves.
+============================================================================
+
+Block elements : https://developer.mozilla.org/en-US/docs/Web/HTML/Block-level_elements#Elements
+
+Inline elements :  https://developer.mozilla.org/en-US/docs/Web/HTML/Inline_elements#Elements
+
+================================================================================
+<div></div>
+The div is short for division, 
+because that's what this element is for—you can use it to divide up the page into different sections.
+
+Like the paragraph p element,
+ the division div element has an invisible box around it—and just like p, it can have a border, a margin, a width, a height, and so on.
+
+But a p element is specifically meant to contain text. In contrast, the div element is a generic container for whatever other elements you might want to put inside.
+ You can use the div element to organize the content and divide the page into sections.
+ ================================================================================
+
+ lists 
+<ol>(ordered list بتبقي مترقمه)
+    <li>must be in ol or ul list</li>
+
+    <ul>(in orderd list بتبقي اللي جواها متنقط)
+
+        <li>must be in ol or ul list</li>
+
+        <li>we can agnore the clising tag in li tag and the browser will indecate it </li>
+        ( the closing tag on the li element is optional.
+         So you can include them or leave them off and it will work the same either way.)
+
+
+
+    </ul>
+</ol>(but notice that the closing tag on the list element ol(or ul) is not optional)
+**Because if we leave off the closing </ol> or </ul>, then the browser will not know when our list ends!
+It will simply treat everything that comes after that point as part of the list.
+
+**The em, ul, and ol elements require a close tag, but the p and li elements do not.
+
+The default display of an unordered list (ul) uses bullet points.
+The default display of an ordered list (ol) uses numbers.
+
+=====================================================================================
+
+to add a link we use a element
+
+<a href="https://github.com/">
+
+(href="https://github.com/" is called attribute)
+("https://github.com/"  is the value of the attribute)
+
+(a refare to anchor of the boat becouse it anchor beice of text)
+(href refer to hipertext refrence)
+the text we will prese it to go to the page
+</a>
+
+
+
+كده لما بضغط علي ال content 
+هيخش علي اللينك في نفس الصفحه 
+لو عاوزه يفتح صفحه جديدة هزود attribute 
+target ="_blank"
+ويبقي كده
+<a href="https://placekitten.com/150/150" target="_blank">Kittens</a>
+======================================================================================
+to add an image we use img element
+
++void element 
++inline element
+
+<img src="https://fakeurl.example.net/fish.png" alt="Fish">
+
+(src refare to source as the source of the image)
+(alt show the text will appear when the image is missing)
+
+we can make a nasting with a and img elements 
+"when you click on image and you go to link"
+
+To create an image that is a link, put an img element between the open and close tags of an a element, for instance:
+
+<a href="https://google.com"><img src="glogo.png" alt="Google!"></a>
+
+This is a great example of nesting!
+========================================================================================
+every html file put an doctag in first of it 
+
+<!DOCTYPE html>
+=====================================================================================
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Title of your page</title>
+  </head>
+  <body>
+    Content goes here! (Things like paragraphs, links, and images.)
+  </body>
+</html>
+كده ده ملف html كامل
+
+مش لازم اعمل ال body
+وال  head 
+ولكن الحجات اللى بتبقي في ال head لازم تبقي فوق في الاول
+زى <title></title>
++++++
+والحجات اللى في ال body تبقي تحت
+==========================================================================================================
+to validate (test) the html file put it into this website https://validator.w3.org/ 
+==========================================================================================================
+CSS
+
+You will use CSS to change the color or the layout of a web page,
+ among other things! If you want to add paragraphs or images to a web page,
+  you'll do that using HTML
+=====================================================================================================
+tree structure 
+
+1-The tree starts with a single node, the root, which has no incoming branches.
+2=Each node can have branches to new nodes.
+3=Each (non-root) node can have only one incoming branch.
+
+===================================================================================================
+to make a style you have 2 choices
+
+1-
+inline style (attribute)
+ex. 
+<p style="color: red;">Make me red!</p>
+هنا ال p دي بس 
+اللي اللون فيها هيتغير
+
+2-
+
+<head>
+    <style>
+        p{color: red;}
+    </style>
+</head>
+هنا كل الل p هتبقي لونها احمر
+
+===================================================================================================
+عشان اخلي الtext في النص هستخدم
+text-align: center
+
+<p style="text-align: center;">
+    This is a haiku</p>
+=======================================================================================================
+
+
+Note: You may have noticed that the semicolon ; at the end is optional—removing it does not seem
+to cause a problem. This is true if you only have one style applied to the element. If you want to add
+more styles, the semicolon must be used to separate them.
+For example:
+
+<p style="text-align:center; color:blue;">This will be both centered and blue.</p>
+=========================================================================================================
+Multiple styles
+
+<p style="color: blue; text-align: center;">Hello world!</p>
+=========================================================================================================
+HTML vs CSS
+<p style="color: red;">Hello!</p>
+
+
+<p               is HTML
+ style="         is HTML
+ color: red;     is CSS
+ ">Hello!</p>    is HTML
+=====================================================================================================
+CSS:.
+If we just put the CSS anywhere on the page, the browser will get confused.
+ It will try to interpret the CSS code as if it were HTML!
+
+To signal to the browser that this code is in the CSS language,
+ we need to put it inside a style element or use it as the value of a style attribute.
+===================================================================================================
+عشان اغير ال size 
+font-size:24pt;       بيستخدم 
+
+<head>
+    <style>
+          p{font-size:24pt;}
+      </style>
+  </head>
+=================================================================================
+
+p (p is a selector){ (whole of this is block called rulest)
+    color(color is property): green(green is a value);(this whole line is a decliration)
+    margin: 20px;(Each declaration ends in a semicolon.)
+}
+
+ol(ol is a selector)(The selector occurs at the start of each ruleset, and describes what elements the ruleset will be applied to) {
+    outline: 1px dotted black;
+}
+
+(so the above is two rulests)
+===================================================================================
+type selector 
+
+class selector 
+
+ID selector 
+
+ex.
+
+<html>
+<head>
+<style>
+.special {
+    color: purple;
+}
+p {
+    font-style: italic;
+}
+#important-information {
+    font-weight: bold;
+}
+</style>
+</head>
+<body>
+
+<h1 class = "special">This header is special</h1>
+<p>A nice paragraph in italics.</p>
+<h1>This header isn't so special.</h1>
+<p>And this paragraph will be in italics too!</p>
+<p id = "important-information">This paragraph needs to be italicized and bolded!</p>
+
+</body>
+</html>
+================================================================================================
+
+background-color: yellow;
+text-decoration: line-through;
+font-weight: bold;
+color: red;
+===================================================================================================
+to apply 2 classes in one element 
+put them in value separated by space
+like This(highlight is class and done is a class too)
+<li class="highlight done">Make waffles
+====================================================================================================
+CSS 
+Cascading and specificity
+
+The term "cascading" in Cascading Style Sheets refers to the way that
+style properties "cascade" down the DOM tree, starting at the top.
+ A style applied to the body element will affect the entire document.
+  A style applied to a lower-level element will affect that element and all its descendants.
+
+A style applied at a lower level can override a style at a higher level.
+ For instance, if the body has color: red but a paragraph within the body has color: blue,
+  the blue will apply to that paragraph and to any elements inside it:
+
+  <style>
+    body { color: red; }
+    p { color: blue; }
+</style>
+<body>
+    <p> This will be blue, not red. <br>
+        <em> Same with this. </em> </p>
+</body>
+=====================================================================================
+<html>
+    <head>
+        <style>
+            .box{ 
+                border: 5px solid blue;
+                padding: 0.5em;
+                height: 50px;
+                width: 100px;
+                margin: 0.5em;
+                float: left;
+                }
+        </style>
+    </head>
+<body>
+<p class="box">
+    Ahmed Essam
+</p>
+</body>
+</html>
+=============================================================================================
+The width property only changes the width of the contents.
+ The padding, border, and margin are not included in the width
+  (so they add extra width around the sides of the box!).
+==============================================================================================
+p.small {
+    font-variant: small-caps;
+  }
+  بيخلي الحروف ال capital 
+  بشكل مصغر
+========================================================================================
+comment 
+<!--  البدايه
+
+
+
+--> النهايه
+
+<!-- او تعلم علي مجموعه من السطور و تدوس  -->
+control + forward sh
+========================================================================================
+old way for bold and italic
+
+<b>Bold</b>
+<i>italic</i>
+
+new way 
+<strong>Bold</strong>
+
+<em> italic</em>
+=========================================================================================
+contaniers to apply style 
+
+<div></div>
+
+<span>span is inline container</span>
+
+============================================================================================
+tables
+
+<table>
+
+     <thead><!--(refer to table head and fill rith th and we cannot
+         put it too and there are just tr) -->
+        <th> head for fist colum </th>
+        <th> head for secound colum </th>
+
+    </thead>
+    <tr> <!-- tr for table row -->
+       <td>this will be first row first colum</td> <!-- tr for table cell -->
+       <td>this will be first raw secound colum</td>
+    </tr>
+    <tr>
+        <td>R2 C1</td>
+        <td>R2 C2</td>
+    </tr>
+
+</table>
+===============================================================================================
+<form action="page.html">
+    <!-- 
+    ## type  :  is the type of the input and have restractions on it
+    ## name  :  is to use as a refrance
+    ## value :  is used as a defult valeu\
+    ## Placeholde : used a text like hiden
+    ## required : you must in put somthing in this input
+    ## disabled : you can't choose either write any thing in this inpur
+    
+
+    @@ type submit : send data of all types to action page thats writen in form atterpute
+    @@ type button : deals with javascript make the function on    onclick atterbute
+    @@ reset type  : rest all writen values
+    @@ file type   : upload file from your Pc 
+    @@ image type  : it's like submit type it's send the data of all types to the action page
+                     but it also send the احداثيات المكان اللي دوست فيه
+    @@ hidden type : this type is hidden in the page but we can send data in it to action page
+    @@ checkbox type : you can check several boxes
+    @@ radio Trype : this the circle Box and you can choose only one 
+                     but you must name them the same name -->
+
+
+        <label for="">
+             here is the labal for the next type
+             <!-- there are more explination down-->
+            <input type="text" name="" value="" placeholder="" disabled>
+        </label>
+    <input type="text" name="" value="" placeholder="" required>
+    <input type="color" name="" id="">
+    <input type="email" name="" id="">
+    <input type="password" name="" id="">
+    <input type="submit" value="Click Me">
+    <input type="button" name="click me" value="click me" onclick="functionname()">
+    <input type="reset">
+    <input type="file">
+    <input type="image" src="http://placehold.it/100/100" alt="image missing">
+    <input type="hidden" name="" value="">
+    <input type="checkbox" name="" id="">
+    <input type="radio" name="phoneType" value="Iphone">
+    <input type="radio" name="phoneType" value="samsung">
+    <input type="radio" name="phoneType" value="hawawi">
+    <input type="radio" name="phoneType" value="xiome">
+    <!-- it's have the same name (phonetype) so you can choose only one of them-->
+    <textarea name="" id="" cols="30" rows="10"></textarea>
+    <fieldset> 
+        <legend>This the title of the fieldset</legend>
+        <!-- inside it some of inputs and fieldset will make a box around them-->
+
+    </fieldset>
+    <select name="" id="" disabled size="the size will apear" multiple>
+                                     <!-- if you write disabled you can't choose any 
+                                        thing from the select box-->
+        <option disabled>
+             <!-- if you write disabled you can't choose  
+                      this option from the select box-->
+        </option>
+        <!--الخيارات الخاصه بال select-->
+        <option value="هنا القيمه اللي هتتبعت لل action Page "></option>
+        <option value=""></option>
+    </select>
+</form>
+
+=============================================================================================
+<textarea name="" id="" cols="30" rows="10" readonly> @@@content@@@</textarea>
+<!-- here you make a text area  to weite any text you want 
+    ##### cols and rows controlling the height and the width of the area you can see
+    ##### also the content you will write will be writen in the Page 
+    ##### readonly if you write this you can't put text anymore-->
+==============================================================================================
+
+<form action="">
+
+
+
+    <label for="Label1">Here is the Label</label><!-- for value will be the IDs of inputs 
+                            you want to label them by this label-->
+
+    <!-- Here we put the input outside the label-->
+
+    <input type="text" name="" id="Label1">
+    <input type="text" name="" id="Label1">
+    <input type="text" name="" id="Label1">
+
+                       
+                        
+</form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
